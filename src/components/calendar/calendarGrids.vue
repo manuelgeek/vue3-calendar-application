@@ -29,12 +29,10 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   days: {
     type: Object,
     required: true,
   }
 })
-
-const days = props.days
 </script>

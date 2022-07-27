@@ -2,5 +2,8 @@ import { createApp } from 'vue'
 import './style.css'
 import './tailwind.css'
 import App from './App.vue'
+import {createPinia} from 'pinia';
 
-createApp(App).mount('#app')
+const pinia = createPinia()
+
+createApp(App).use(pinia).mount('#app')
