@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import weekday from 'dayjs/plugin/weekday.js';
 import weekOfYear from 'dayjs/plugin/weekOfYear.js';
-import {computed, ref, watch} from 'vue';
+import {computed, ref} from 'vue';
 import {useCalendarStore} from '../store/calendar.js';
 
 export function useCalendar() {
@@ -111,10 +111,6 @@ export function useCalendar() {
   const calendarStore = useCalendarStore()
   // set days to state
   calendarStore.updateDays(days)
-  // watch days chnages and update state
-  watch(days, () => {
-    calendarStore.updateDays(days)
-  })
 
   return {
     getWeekday,

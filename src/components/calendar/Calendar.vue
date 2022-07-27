@@ -12,7 +12,7 @@
         <div class="bg-white py-2">S<span class="sr-only sm:not-sr-only">at</span></div>
         <div class="bg-white py-2">S<span class="sr-only sm:not-sr-only">un</span></div>
       </div>
-      <calendar-grids :days="days" />
+      <calendar-grids :days="calendarStore.days" />
     </div>
     <div v-if="'events' in selectedDate && selectedDate.events.length > 0" class="py-10 px-4 sm:px-6 lg:hidden">
       <ol class="divide-y divide-gray-100 overflow-hidden rounded-lg bg-white text-sm shadow ring-1 ring-black ring-opacity-5">
@@ -40,11 +40,9 @@ import CalendarGrids from './calendarGrids.vue';
 import CalendarHeader from './calendarHeader.vue';
 import {useCalendar} from '../../composables/useCalendar';
 import {useCalendarStore} from '../../store/calendar.js';
-import {watch, watchEffect} from 'vue';
 
-const {days, selectedDate, selectDate, today}  = useCalendar()
+const {selectedDate, selectDate, today}  = useCalendar()
 
 const calendarStore = useCalendarStore()
-// const days = calendarStore.days
 
 </script>
