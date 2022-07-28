@@ -8,14 +8,6 @@ export function useCalendar() {
   dayjs.extend(weekday);
   dayjs.extend(weekOfYear);
 
-// {
-//   date: '2022-01-12',
-//   isCurrentMonth: true,
-//   isToday: true,
-// isSelected: true,
-//   events: [{ id: 6, name: "Sam's birthday party", time: '2PM', datetime: '2022-01-25T14:00', href: '#' }],
-// },
-
   const selectedDate = ref(dayjs())
 
   const today = computed(() => dayjs().format("YYYY-MM-DD"));

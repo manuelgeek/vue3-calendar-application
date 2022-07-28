@@ -22,7 +22,6 @@ export function useReminder(daysData ) {
     // console.log({data})
     await addReminder(data)
     resetForm()
-    // { id: 6, name: "Sam's birthday party", time: '2PM', datetime: '2022-01-25T14:00', href: '#' }
   });
 
   const { errorMessage: reminderError, value: reminderValue } = useField('reminder', yup.string().required().max(30));
