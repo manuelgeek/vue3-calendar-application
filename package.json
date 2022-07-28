@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vuepic/vue-datepicker": "^3.3.1",
     "dayjs": "^1.11.4",
     "pinia": "^2.0.17",
-    "vue": "^3.2.37"
+    "vee-validate": "^4.6.2",
+    "vue": "^3.2.37",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",

@@ -110,7 +110,14 @@ export function useCalendar() {
 
   const calendarStore = useCalendarStore()
   // set days to state
+  // calendarStore.$patch({days})
   calendarStore.updateDays(days)
+
+  const selectedDay = ref({})
+
+  const showDayEvents = (date) => {
+    selectedDay.value = calendarStore.days.find((d) => d.date === date)
+  }
 
   return {
     getWeekday,
@@ -118,5 +125,7 @@ export function useCalendar() {
     selectedDate,
     days,
     today,
+    showDayEvents,
+    selectedDay
   }
 }
