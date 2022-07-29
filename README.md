@@ -1,7 +1,42 @@
-# Vue 3 + Vite
+# Vue 3 + Vite Calendar App
+> A Vue 3 calendar app with ability to create reminders
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Set up
+```bash
+# install dependencies
+yarn install
 
-## Recommended IDE Setup
+# dev command
+yarn dev 
+#or 
+vite
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+# testing
+yarn test 
+#or 
+vitest
+```
+
+## Tools used
+
+- Vite
+- Vitest for test
+- Pinia for store
+- Tailwindcss
+
+
+## Features done
+- Display calendar, ability to got to next or previous calendar, tailwind css styled
+- Add reminder to calendar with date, time, name, color, city
+- -Store calendar days in store (pinia)
+- Display reminders in calendar in time order, with color background
+- Edit reminder, click on reminder to edit
+- Mobile calendar view
+
+
+## What I could have done better
+Given time;
+- Improve the UI
+- persist pinia store in case of reloads and navigation, next/previous
+- Implemented Open Weather API or looked for alternative, the given option requires payment and do not accent dates and city as params for request
+- Improved on test coverage

@@ -1,12 +1,12 @@
 <template>
   <a href="#" :class="['flex text-left mb-0.5 px-3 hidden lg:block', event.color]" @click.prevent="dialog = true">
     <span :class="['group text-left font-medium text-white group-hover:text-indigo-600']">
-      {{ event.name }}
+      {{ event.name }} - {{event.city}}
     </span>
     <time :datetime="event.datetime" class="hidden flex-none text-gray-300 group-hover:text-indigo-600 lg:block -mt-2">{{ event.time }}</time>
   </a>
   <a href="#" @click.prevent="dialog = true" class="ml-6 lg:hidden flex-none self-center rounded-md border border-gray-300 bg-white py-2 px-3 font-semibold text-gray-700 opacity-0 shadow-sm hover:bg-gray-50 focus:opacity-100 group-hover:opacity-100"
-  >Edit<span class="sr-only">, {{ event.name }}</span></a
+  >Edit<span class="sr-only">, {{ event.name }} - {{event.city}}</span></a
   >
   <modal title="Edit Reminder" v-model:value="dialog" @close-modal="dialog = false">
     <reminder-form :days-data="daysData"  >
