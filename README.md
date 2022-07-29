@@ -48,6 +48,14 @@ vitest
 - Functionality to delete one or ALL the reminders for a specific day
 - Properly handle overflow when multiple reminders appear on the same date.
 
+### Dev
+
+Hosted on heroku through Github Actions, trigger is done on `main` branch for demo purposes, an Ideal development environment will have different dedicated branches
+
+Github actions used for Running Tests and Lints
+
+I've also use pre commit hooks to prevent un formatted code from being pushed upstream
+
 ## What I could have done better
 
 Given time;
