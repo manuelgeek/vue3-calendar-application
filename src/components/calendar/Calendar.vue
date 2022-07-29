@@ -16,7 +16,7 @@
     </div>
     <div v-if="'events' in selectedDay && selectedDay.events.length > 0" class="py-10 px-4 sm:px-6 lg:hidden">
       <ol class="divide-y divide-gray-100 overflow-hidden rounded-lg bg-white text-sm shadow ring-1 ring-black ring-opacity-5">
-        <li v-for="event in selectedDay.events" :key="event.id" class="group flex p-4 pr-6 focus-within:bg-gray-50 hover:bg-gray-50">
+        <li v-for="event in selectedDay.events.sort((a,b) => new Date(a.datetime + ' ' +a.time) - new Date(b.datetime + ' ' +b.time))" :key="event.id" class="group flex p-4 pr-6 focus-within:bg-gray-50 hover:bg-gray-50">
           <div class="flex-auto">
             <p :class="['font-semibold text-gray-900', event.color]">{{ event.name }}</p>
             <time :datetime="event.datetime" :class="['mt-2 flex items-center text-gray-700']">

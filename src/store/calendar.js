@@ -2,7 +2,7 @@ import {defineStore} from 'pinia';
 
 export const useCalendarStore = defineStore('calendar', {
   state: () => {
-    return { days: [], test: 'hello', keyId: 1 }
+    return { days: [], keyId: 1 }
   },
   // getters: {
   //   getDays: (state) => state.days
@@ -11,8 +11,5 @@ export const useCalendarStore = defineStore('calendar', {
     updateDays(days) {
       this.days = days
     },
-    // updateDays1(days) {
-    //   this.test = days
-    // },
   },
 })

@@ -53,7 +53,7 @@ export function useReminder(daysData ) {
   const calendarStore = useCalendarStore()
 
   const addReminder = async (data) => {
-    await getWeatherData()
+    // await getWeatherData()
     const days = calendarStore.days
 
     const newDays = days.map((day) => {
@@ -69,6 +69,7 @@ export function useReminder(daysData ) {
     calendarStore.keyId ++
   }
 
+  // TODO: get better open weather API, api keys don't work
   const getWeatherData = async () => {
     // TODO:// add this to env
     const API_KEY = '8d4b1fa7df69a890dbc046b55e654304'
