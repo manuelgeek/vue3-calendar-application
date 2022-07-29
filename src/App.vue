@@ -2,8 +2,8 @@
   <Calendar />
 </template>
 <script>
-import Calendar from './components/calendar/Calendar.vue';
+import Calendar from "./components/calendar/Calendar.vue";
 export default {
-  components: {Calendar}
-}
+  components: { Calendar },
+};
 </script>
