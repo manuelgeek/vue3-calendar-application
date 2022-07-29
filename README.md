@@ -27,6 +27,9 @@ vitest
 - Vitest for test
 - Pinia for store
 - Tailwindcss
+- Eslint
+- Prettier
+- Husky for pre-commit hooks
 
 ## Features done
 
