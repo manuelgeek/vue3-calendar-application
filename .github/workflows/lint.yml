@@ -5,15 +5,14 @@ name: Lint CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   repository_dispatch:
     types: [lint-command]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:

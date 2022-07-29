@@ -42,7 +42,7 @@
 
 <script setup>
 import Modal from "../modal.vue";
-import {computed, ref} from 'vue';
+import { computed, ref } from "vue";
 import ReminderForm from "./reminderForm.vue";
 const dialog = ref(false);
 
