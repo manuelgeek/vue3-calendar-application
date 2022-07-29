@@ -98,7 +98,4 @@ const emit = defineEmits(["day-selected"]);
 const selectDay = (day) => {
   emit("day-selected", day);
 };
-
-
-
 </script>
