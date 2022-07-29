@@ -1,6 +1,8 @@
 # Vue 3 + Vite Calendar App
 
 > A Vue 3 calendar app with ability to create reminders
+>
+> ![badge](https://github.com/manuelgeek/vue3-calendar-application/workflows/Lint%20and%20Test%20CI/badge.svg)
 
 ## Set up
 
