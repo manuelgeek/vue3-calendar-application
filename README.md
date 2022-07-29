@@ -2,6 +2,8 @@
 
 > A Vue 3 calendar app with ability to create reminders
 >
+> Link: [https://vue-calendar-task.herokuapp.com/](https://vue-calendar-task.herokuapp.com/)
+>
 > ![badge](https://github.com/manuelgeek/vue3-calendar-application/workflows/Lint%20and%20Test%20CI/badge.svg)
 
 ## Set up
@@ -39,6 +41,12 @@ vitest
 - Display reminders in calendar in time order, with color background
 - Edit reminder, click on reminder to edit
 - Mobile calendar view
+
+### Bonus
+
+- Expand the calendar to support more than the current month.
+- Functionality to delete one or ALL the reminders for a specific day
+- Properly handle overflow when multiple reminders appear on the same date.
 
 ## What I could have done better
 
